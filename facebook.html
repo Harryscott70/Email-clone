@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facebook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    .container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    .formcard{
+    width: 500px;
+    height: 550px;
+    border: 1px solid rgb(236, 236, 236);
+    padding: 10px;
+}
+ form{
+    width: 100%;
+    height: 100%;
+}
+
+    .sign-up{
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    position: relative; 
+    justify-content: center;
+
+    }
+    .sign-up p{
+    color: rgb(165, 164, 164);
+    font-size: 17px;
+}
+.sign-up img{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+}
+    .personal-det{
+     width: 100%;
+    /* height: 200px; */
+    padding-top: 10px;
+    justify-content: space-around;
+    }
+    .name-tab{
+     width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    }
+    .text-inputs{
+    height: 42px;
+    font-size: 16px;
+    padding-left: 10px;
+    background: #F5F6F8;
+    border: 2px solid #E5E6E8;
+    border-radius: 5px;
+    color: #8D9799;
+    outline: none;
+    opacity: .8;
+    margin-bottom: 8px;
+    width: 100%;
+}
+.name-inputs{
+    width: 48%;
+}
+    .dob-sec{
+    width: 100%;
+    padding-top: 3px;
+    }
+    .dob-sec p{
+    font-size: 15px;
+    color: #6d7172;
+    margin-bottom: 2px;
+}
+
+    .dob-inputs{
+     width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    }
+    .dob-inputs select{
+    width: 32%;
+    border: 1px solid #c7c8c9;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 8px;
+    cursor: pointer;
+}
+    .gender{
+     padding-top: 10px;  
+
+    }
+    .gender p{
+    font-size: 15px;
+    color: #6d7172;
+    margin-bottom: 2px;
+}
+    .gender-inputs{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    }
+    .gender-inputs div{
+    border: 1px solid #c7c8c9;
+    outline: none;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 8px;
+    width: 32%;
+}
+
+    .female-opt{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    justify-content: space-between;
+
+    }
+    .male-opt{
+     display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    justify-content: space-between;
+
+    }
+    .custom-opt{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+    justify-content: space-between;
+
+    }
+    .terms{
+        padding-top: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.terms a{
+    text-decoration: none;
+    color: #0a5999;
+}
+.terms p{
+    font-size: 13px;
+}
+    .policy{
+    margin-top: 10px;
+
+    }
+    .button{
+    width: 200px;
+    text-align: center;
+    background: #00A400;
+    font-weight: 700;
+    border-radius: 9px;
+    margin: auto;
+    color: white;
+    padding: 10px 0px 10px 0px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: none;
+    border: none; 
+
+    }
+    #female, #male, #custom{
+    cursor: pointer;}
+    i{
+    opacity: .8;
+}
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+
+    <div class="container">
+        <div class="formcard">
+            <form action="#">
+                <div class="sign-up">
+                    <h1>Create a new account</h1>
+                    <p>It's quick and easy.</p>
+                    <img src="images/close-menu.png" alt="">
+                </div>
+                <div class="personal-det">
+                    <div class="name-tab">
+                        <input type="text" placeholder="First name" class="name-inputs text-inputs">
+                        <input type="text" placeholder="Surname" class="name-inputs text-inputs"> 
+                    </div>
+                    <input type="text" class="text-inputs" placeholder="Mobile number or phone number">
+                    <input type="password" name="" id="" class="text-inputs" placeholder="New password">
+                </div>
+                <div class="dob-sec">
+
+                    <div class="dob">
+                        <p>Date of birth <i class="fa fa-question-circle"></i> </p>
+                        <div class="dob-inputs">
+                            <select name="day" id="day">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option selected>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                            <select name="month" id="month">
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option selected>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                            <select name="year" id="year">
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                                <option>2008</option>
+                                <option>2009</option>
+                                <option>2010</option>
+                                <option>2011</option>
+                                <option>2012</option>
+                                <option>2013</option>
+                                <option>2014</option>
+                                <option>2015</option>
+                                <option>2016</option>
+                                <option>2017</option>
+                                <option>2018</option>
+                                <option>2019</option>
+                                <option>2020</option>
+                                <option>2021</option>
+                                <option>2022</option>
+                                <option>2023</option>
+                                <option selected>2024</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="gender">
+                        <p>Gender <i class="fa fa-question-circle"></i></p>
+                        <div class="gender-inputs">
+                            <div class="female-opt">
+                                <input type="radio" name="female" id="female">
+                                <p>Female</p>
+                            </div>
+                            <div class="male-opt">
+                                <input type="radio" name="female" id="male">
+                                <p>Male</p>
+                            </div>
+                            <div class="custom-opt">
+                                <input type="radio" name="female" id="custom">
+                                <p>Custom</p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="terms">
+                    <p class="learn-more">
+                        People who use our services may have uploaded your contact information to Facebook. <a href="#">Learn more</a>
+                    </p>
+                    <p class="policy">
+                        By clicking Sign Up, you agree to our<a href="#"> Terms, Privacy Policy</a> and <a href="#">Cookies Policy</a>
+                        You may recieve SMS notifications from us and can opt out any time.
+                    </p>
+                </div>
+                    <div class="button">Sign Up</div>
+                </div>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>
